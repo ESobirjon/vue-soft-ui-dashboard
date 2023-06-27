@@ -1,96 +1,143 @@
 <template>
   <div class="card mb-4">
     <div class="card-header pb-0">
-<!--      <h6>{{header}}</h6>-->
+      <!--      <h6>{{header}}</h6>-->
     </div>
     <div class="card-body px-0 pt-0 pb-2">
       <div class="table-responsive p-0">
         <table class="table align-items-center mb-0">
           <thead>
-            <tr>
-              <th
+          <tr>
+            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"></th>
+            <th
                 class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
-              >
-                Author
-              </th>
-              <th
+            >
+              Id
+            </th>
+            <th
                 class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2"
-              >
-                Function
-              </th>
-              <th
+            >
+              Yuk xati raqami
+            </th>
+            <th
                 class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
-              >
-                Status
-              </th>
-              <th
+            >
+              Sana
+            </th>
+            <th
                 class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
-              >
-                Employed
-              </th>
-              <th class="text-secondary opacity-7"></th>
-            </tr>
+            >
+              Forma
+            </th>
+            <th
+                class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+            >
+              Qiymati
+            </th>
+            <th
+                class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+            >
+              QQS
+            </th>
+            <th
+                class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+            >
+              Dollar qiymati
+            </th>
+            <th
+                class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+            >
+              Yaratilgan sana
+            </th>
+            <th class="text-secondary opacity-7"></th>
+          </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>
-                <div class="d-flex px-2 py-1">
-                  <div>
-                    <soft-avatar
-                      :img="img1"
-                      size="sm"
-                      border-radius="lg"
-                      class="me-3"
-                      alt="user1"
-                    />
-                  </div>
-                  <div class="d-flex flex-column justify-content-center">
-                    <h6 class="mb-0 text-sm">John Michael</h6>
-                    <p class="text-xs text-secondary mb-0">
-                      john@creative-tim.com
-                    </p>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <p class="text-xs font-weight-bold mb-0">Manager</p>
-                <p class="text-xs text-secondary mb-0">Organization</p>
-              </td>
-              <td class="align-middle text-center text-sm">
-                <soft-badge color="success" variant="gradient" size="sm"
-                  >Online</soft-badge
-                >
-              </td>
-              <td class="align-middle text-center">
-                <span class="text-secondary text-xs font-weight-bold"
-                  >23/04/18</span
-                >
-              </td>
-              <td class="align-middle">
-                <a
-                  href="javascript:;"
-                  class="text-secondary font-weight-bold text-xs"
-                  data-toggle="tooltip"
-                  data-original-title="Edit user"
-                  >Edit</a
-                >
-              </td>
-            </tr>
+          <tr>
+            <td class="text-center cursor-pointer">
+              <img src="@/assets/img/excel1.png" style="width: 30px; height: 35px;" alt="excel"/>
+            </td>
+            <td>
+              <div class="d-flex px-3 py-1">
+                <p class="text-xs font-weight-bold mb-0">Id</p>
+              </div>
+            </td>
+            <td>
+              <p class="text-xs font-weight-bold mb-0">Yuk xati raqami</p>
+            </td>
+            <td class="align-middle text-center text-sm">
+              <soft-badge color="success" variant="gradient" size="sm"
+              >01.02.2023
+              </soft-badge
+              >
+            </td>
+            <td class="align-middle text-center">
+              <p class="text-xs font-weight-bold mb-0">Forma nomi</p>
+            </td>
+            <td class="align-middle text-center">
+              <p class="text-xs font-weight-bold mb-0">Qiymati</p>
+            </td>
+            <td class="align-middle text-center">
+              <p class="text-xs font-weight-bold mb-0">QQS qiymati</p>
+            </td>
+            <td class="align-middle text-center">
+              <p class="text-xs font-weight-bold mb-0">Dollar qiymati</p>
+            </td>
+            <td class="align-middle text-center">
+              <p class="text-xs font-weight-bold mb-0">Yaratilgan sana</p>
+            </td>
+            <td class="align-middle cursor-pointer">
+              <img src="@/assets/img/delete1.png" style="width: 40px; height: 40px;" alt="delete">
+            </td>
+          </tr>
           </tbody>
         </table>
+      </div>
+    </div>
+
+
+    <!-- PAGINATION  -->
+    <div class="row justify-space-between">
+      <div class="col-lg-4 mx-auto">
+        <ul class="pagination pagination-primary m-4">
+          <li class="page-item">
+            <a class="page-link" href="" aria-label="Previous">
+              <span aria-hidden="true"><i class="fa fa-angle-double-left" aria-hidden="true"></i></span>
+            </a>
+          </li>
+          <li class="page-item active">
+            <a class="page-link" style="background: #69f542" href="javascript:;">1</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="javascript:;">2</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="javascript:;">3</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="javascript:;">4</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="javascript:;">5</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="javascript:;" aria-label="Next">
+              <span aria-hidden="true"><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import SoftAvatar from "@/components/SoftAvatar.vue";
 import SoftBadge from "@/components/SoftBadge.vue";
 import img1 from "../../assets/img/team-2.jpg";
-import img2 from "../../assets/img/team-3.jpg";
-import img3 from "../../assets/img/team-4.jpg";
-import img4 from "../../assets/img/team-3.jpg";
 import img5 from "../../assets/img/team-2.jpg";
+import img2 from "../../assets/img/team-3.jpg";
+import img4 from "../../assets/img/team-3.jpg";
+import img3 from "../../assets/img/team-4.jpg";
 import img6 from "../../assets/img/team-4.jpg";
 
 export default {
@@ -112,7 +159,6 @@ export default {
     };
   },
   components: {
-    SoftAvatar,
     SoftBadge,
   },
 };

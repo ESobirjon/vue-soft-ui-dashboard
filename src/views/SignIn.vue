@@ -45,11 +45,11 @@
                     </div>
                   </form>
                 </div>
-                <div class="px-1 pt-0 text-center card-footer px-lg-2">
+                <div class="px-1 pt-5 text-center card-footer px-lg-2">
                 </div>
-                <div class="px-1 pt-0 text-center card-footer px-lg-2">
+                <div class="px-1 pt-5 text-center card-footer px-lg-2">
                 </div>
-                <div class="px-1 pt-0 text-center card-footer px-lg-2">
+                <div class="px-1 pt-3 text-center card-footer px-lg-2">
                 </div>
               </div>
             </div>
